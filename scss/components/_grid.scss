@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.searchContainer {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.gallery {
+    display: flex;
+    // flex-direction: column;
+    flex-basis: 30%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery li {
+    align-self: center;
+    padding: 3em;
+}
+
+
