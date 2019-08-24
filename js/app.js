@@ -1,3 +1,9 @@
 lightbox.option({
-    'albumLabel': "This is a pic"
+    'albumLabel': '',
+    'wrapAround': true 
 });
+
+
+
+
+
