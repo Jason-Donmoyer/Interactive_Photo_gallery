@@ -4,12 +4,28 @@
     flex-basis: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    background-color: gray;
+    background-image: $background-image;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .searchContainer {
     margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    height: 30px;
+    width: 75%;
+    border: 1px solid $color-black;
+}
+
+#searchbar {
+    align-self: center;
+    width: 100%;
+    text-align: left;
+    padding: .2em;
 }
 
 

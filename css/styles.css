@@ -312,12 +312,27 @@ template {
   flex-direction: column;
   flex-basis: 100%;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background-color: gray;
+  background-image: url("https://images.unsplash.com/photo-1517639493569-5666a7b2f494?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .searchContainer {
   margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: space-around;
+  height: 30px;
+  width: 75%;
+  border: 1px solid #000; }
+
+#searchbar {
+  align-self: center;
+  width: 100%;
+  text-align: left;
+  padding: .2em; }
 
 .gallery {
   display: flex;
@@ -328,5 +343,9 @@ template {
 .gallery li {
   align-self: center;
   padding: 3em; }
+
+.gallery li img {
+  width: 350px;
+  height: 350px; }
 
 /*# sourceMappingURL=styles.css.map */
