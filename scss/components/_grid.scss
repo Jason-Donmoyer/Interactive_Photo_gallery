@@ -5,10 +5,8 @@
         $just: center,
         $bas: 100%
     );
-    background-color: gray;
-    background-image: $background-image;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $color-white;
+    
 }
 
 .searchContainer {
