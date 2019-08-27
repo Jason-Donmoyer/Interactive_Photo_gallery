@@ -15,17 +15,38 @@ let photoArr = [
     `<li><a href="photos/12.jpg" data-lightbox="gallery" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="photos/thumbnails/12.jpg" alt="Bluebells"></a></li>`
 ];
 
+
+
 const $gallery = $('.gallery');
+const $searchbar = $('#searchbar');
+
+
+showGallery();
+
+
 const $photo = $('.gallery li');
+const $photoGal = $photo.children();
 
-
-photoArr.forEach( (photo) => {
-    $gallery.append(photo);
+function searchPhotos() {
+    let $val = $('#searchbar').val().toLowerCase();
+    $photoGal.each(function(i, item) {
+            if ($(item).attr('data-title').toLowerCase().indexOf($val) >-1) {
+                 $(item).parent().show(); 
+            } else { 
+                $(item).parent().hide();
+            }
 });
+}
 
-$('#searchbar').on('keypress', function() {
-    $gallery.children().hide();
-});
+
+function showGallery() {
+    if ($('#searchbar').val() === "") {
+        photoArr.forEach( (photo) => {
+            $gallery.append(photo);
+        });
+    }
+}
+
 
 lightbox.option({
     'albumLabel': '',
