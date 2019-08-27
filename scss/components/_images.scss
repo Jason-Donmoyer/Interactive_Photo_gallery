@@ -1,5 +1,15 @@
 // Photos
 
 .gallery li img {
+    height: 300px;
+    width: 300px;
     border-radius: .12em;
+    @include med-quer('md') {
+        height: 250px;
+        width: 250px;
+    }
+    @include med-quer('lg') {
+        height: 200px;
+        width: 200px;
+    }
 }

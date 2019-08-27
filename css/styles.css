@@ -345,6 +345,16 @@ template {
   padding: 3em; }
 
 .gallery li img {
+  height: 300px;
+  width: 300px;
   border-radius: .12em; }
+  @media (min-width: 590px) {
+    .gallery li img {
+      height: 250px;
+      width: 250px; } }
+  @media (min-width: 769px) {
+    .gallery li img {
+      height: 200px;
+      width: 200px; } }
 
 /*# sourceMappingURL=styles.css.map */

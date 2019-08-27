@@ -15,3 +15,25 @@
     flex-basis: $bas;
 }
 
+//Media Queries
+
+@mixin med-quer($bp) {
+    $val: map-get($breakpoints, $bp);
+    $sm: map-get($breakpoints, 'sm');
+
+    @if $val == null {
+        @warn " `#{$bp}` is not a valid breakpoint value."; 
+       }
+
+       @else if $val < $sm {
+        @media (max-width: $val) {
+          @content;      
+        }
+     }
+     @else {
+         @media (min-width: $val) {
+          @content;      
+        }     
+     }  
+}
+

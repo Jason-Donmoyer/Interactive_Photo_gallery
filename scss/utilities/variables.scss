@@ -10,3 +10,10 @@ $color-placeholder: lighten($color-black, 50%);
 
 $main-font: Arial, Helvetica, sans-serif;
 
+// Breakpoints
+
+$breakpoints: (
+    'sm': 480px,
+    'md': 590px,
+    'lg': 769px
+);

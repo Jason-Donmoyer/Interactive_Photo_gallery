@@ -1,4 +1,4 @@
-// Photo Array
+// Array of all photos
 
 let photoArr = [
     `<li><a href="photos/01.jpg" data-lightbox="gallery" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="photos/thumbnails/01.jpg" alt="Hay Bales"></a></li>`,
@@ -16,16 +16,21 @@ let photoArr = [
 ];
 
 
+// Global variables
 
 const $gallery = $('.gallery');
 const $searchbar = $('#searchbar');
 
+// Initialize gallery
 
 showGallery();
 
+// Gallery variables
 
 const $photo = $('.gallery li');
 const $photoGal = $photo.children();
+
+// Real time search function
 
 function searchPhotos() {
     let $val = $('#searchbar').val().toLowerCase();
@@ -38,6 +43,7 @@ function searchPhotos() {
 });
 }
 
+// Function to populate gallery
 
 function showGallery() {
     if ($('#searchbar').val() === "") {
@@ -47,15 +53,11 @@ function showGallery() {
     }
 }
 
+// Lightbox properties
 
 lightbox.option({
+    'alwaysShowNavOnTouchDevices': true,
     'albumLabel': '',
     'wrapAround': true 
 });
-
-
-
-
-
-
 
